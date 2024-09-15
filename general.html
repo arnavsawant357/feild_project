@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>General Wellness</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #efefef;
+        line-height: 1.5;
+        background-color: beige;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        width: 1180px;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .card {
+        flex: 1 1 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0, 128, 0, 0.2);
+        padding: 10px 20px;
+        margin: 10px;
+      }
+      .card img {
+        max-width: 200px;
+      }
+      .card h4, .card h5 {
+        text-align: center;
+      }
+      .card h4 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 10px 0;
+      }
+      .card h5 {
+        font-size: 1rem;
+        margin: 5px 0;
+      }
+      .card p {
+        margin-bottom: 10px;
+      }
+      .card .btn {
+        margin-top: auto;
+        background: green;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        background-color: rgb(3, 87, 34);
+        width: 100%;
+      }
+      .menubar {
+        padding-top: 10px;
+        padding-left: 15px;
+      }
+      .search input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .search button {
+        background: rgb(255, 255, 255);
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 5px;
+      }
+      .cart {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        background: white;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+        overflow-y: auto;
+        display: none;
+        padding: 20px;
+      }
+      .cart.open {
+        display: block;
+      }
+      .cart-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .cart-total {
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 10px 0;
+      }
+      .close-cart-btn, .checkout-btn {
+        background: green;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 10px auto;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">Rasali</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Profile</a></li>
+          <li><a href="#" id="cart-toggle">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="menubar">
+      <ul>
+        <li id="categories">Shop by Categories
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="general.html" style="color:black;">General Wellness</a></li>
+              <li><a href="women.html" style="color:black;">Women Wellness</a></li>
+              <li><a href="digestive.html" style="color:black;">Digestive Wellness</a></li>
+              <li><a href="cardiac.html" style="color:black;">Cardiac Wellness</a></li>
+              <li><a href="joint.html" style="color:black;">Joint's Wellness</a></li>
+              <li><a href="skincare.html" style="color:black;">Skincare</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="products">Shop by Products
+          <div class="sub-menu-2" id="products">
+            <ul>
+              <li><a href="churna.html" style="color:black;">Oil</a></li>
+              <li><a href="churna.html" style="color:black;">Herbal Powder/Churna</a></li>
+              <li><a href="churna.html" style="color:black;">Juices</a></li>
+              <li><a href="churna.html" style="color:black;">Tablets</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="reviews.html">Reviews and FAQs</a></li>
+      </ul>
+      <div class="search-wrapper">
+        <label for="search"></label>
+        <input type="search" id="search" spellcheck="false">
+        <button onclick="searchProducts()"> search</button>
+    </div>
+    </div><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <img src="chawanprash.png" alt="">
+          <h4>Amalaki-prash</h4>
+          <h5>A Vedic Recipe of 40 Anti-oxidant Rich Herbs to boost Immunity & fortify Health and Wellbeing.</h5>
+          <p>Rs.799</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+          <img src="sitopaladi.jpg" alt="">
+          <h4>Ayurved Sitopaladi Churna</h4>
+          <h5>Helps to relieve dry and wet cough, burning sensation in hands and feet, fatigue and problems related to rickets.</h5>
+          <p>Rs.150</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+          <img src="kashar.png" alt="">
+          <h4>Kas Har Kadha</h4>
+          <h5>Helps to cure cold and cough</h5>
+          <p>Rs.293</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card">
+          <img src="tribhuvankirti.webp" alt="">
+          <h4>Ayurveda Tribhuvan Kirti Ras 40 Tablet</h4>
+          <h5>Beneficial for various body symptoms including flu, digestive issues, cough, cold</h5>
+          <p>Rs.100</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+          <img src="bramhi.png" alt="">
+          <h4>Brahmi Tablets</h4>
+          <h5>Boosts your body's resistance | Calming effect on the nervous system |60 Tablets</h5>
+          <p>Rs.425</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+          <img src="ashwagandhi.png" alt="">
+          <h4>Ashwagandhadi Churna</h4>
+          <h5>Increase immunity, maintain vitality and stamina | 120g</h5>
+          <p>Rs.347</p>
+          <a href="#" class="btn">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart container -->
+    
+
+    <div class="cart-container">
+      <h2>Shopping Cart</h2>
+      <div class="cart-list" id="cart-list">
+          <!-- Cart items will be listed here -->
+      </div>
+      <div class="cart-total" id="cart-total">
+          <p>Total: ₹0</p>
+      </div>
+      <div class="cart-actions">
+          <button class="btn" id="checkout-btn">Checkout</button>
+          <button class="btn" id="clear-cart-btn">Clear Cart</button>
+      </div>
+  </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

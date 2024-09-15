@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasali</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+  
+
+    <nav class="navbar">
+        <div class="brand-title"> <a href="home.html" style="color:white;"> Rasali </a></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"> </span>
+            <span class="bar"> </span>
+            <span class="bar"> </span>
+            <span class="bar"> </span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li class="active"> <a href="home.html" id="home"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="login.html"> Profile </a></li>
+                <li> <a href="cart.html"> Cart </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    
+
+    <div class="menubar">
+        <ul>
+            <li id="categories">  Shop by Categories  
+                <div class="sub-menu-1">
+                    <ul>
+                        <li> <a href="general.html" style="color:black;">General Wellness </a></li>
+                        <li> <a href="women.html" style="color:black;">Women Wellness </a> </li>
+                        <li> <a href="digestive.html" style="color:black;">Digestive Wellness </a></li>
+                        <li> <a href="cardiac.html" style="color:black;">Cardiac Wellness </a> </li>
+                        <li> <a href="joint.html" style="color:black;">Joint's Wellness </a></li>
+                        <li> <a href="skincare.html" style="color:black;">Skincare</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="products"> Shop by Products 
+                <div class="sub-menu-2" id="products">
+                    <ul>
+                        <li> <a href="oil.html" style="color:black;">Oil </a></li>
+                        <li> <a href="churna.html" style="color:black;">Herbal Powder/Churna </a></li>
+                        <li> <a href="juice.html" style="color:black;">Juices </a></li>
+                        <li> <a href="tablets.html" style="color:black;">Tablets </a></li>
+                    </ul>
+                </div>
+            </li>
+            <li> <a href="reviews.html"> Reviews and FAQs </a></li>
+
+        </ul>
+        <div class="search-wrapper">
+          <label for="search"></label>
+          <input type="search" id="search" spellcheck="false">
+          <button onclick="searchProducts()"> search</button>
+      </div>
+        
+    </div>
+
+    
+
+    <h2 id="pp" style="color: rgb(3, 87, 34)"> &nbsp;Popular Products</h2>
+    <div class="container">
+        <div class="row">
+          <div class="card">
+            <div class="containers" id="product-container">
+            <img src="joint.jpg" alt="">
+            <h4>Joint Aid </h4>
+            <p id="price">Rs.135</p>
+            <a href="#" data-name="Joint Aid" class="btn">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="containers" id="product-container">
+            <img src="amla.jpg" alt="">
+            <h4>Amla Oil</h4>
+            <p>Rs.125</p>
+            <a href="#" class="btn">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="aliant.jpg" alt="">
+            <h4>Aliant Capsules</h4>
+            <p>Rs.140</p>
+            <a href="#" data-name="Joint Aid" class="btn">Add to Cart</a>
+          </div>
+          </div>
+          <div class="container">
+            <div class="row">
+            
+          <div class="card">
+            <img src="kofol.jpg" alt="">
+            <h4>Kofol Chewable Tablets</h4>
+            <p>Rs.92</p>
+            <a href="#" data-name="Joint Aid" class="btn">Add to Cart</a>
+          </div>
+          <div class="card">
+            <img src="apoliv.jpg" alt="">
+            <h4>Apoliv Syrup</h4>
+            <p>Rs.135</p>
+            <a href="#" data-name="Joint Aid" class="btn">Add to Cart</a>
+          </div>
+          <div class="card">
+            <img src="tulsi.jpg" alt="">
+            <h4>Tulsi Drops</h4>
+            <p>Rs.100</p>
+            <a href="#" data-name="Joint Aid" class="btn">Add to Cart</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+          
+        <div class="card">
+          <img src="neem.jpg" alt="">
+          <h4>Neem Capsules</h4>
+          <p>Rs.150</p>
+          <a href="#" data-name="Joint Aid" class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+          <img src="immunity.jpg" alt="">
+          <h4>Immunity Booster</h4>
+          <p>Rs.170</p>
+          <a href="#" data-name="Joint Aid" class="btn">Add to Cart</a>
+        </div>
+        <div class="card">
+          <img src="digestive.jpg" alt="">
+          <h4>Digestive Enzyme Syrup</h4>
+          <p>Rs.200</p>
+          <a href="#" data-name="Joint Aid" class="btn">Add to Cart</a>
+        </div>
+      </div><br><br>
+    
+      <div class="features">
+        <div class="item"><br><i class="fa-solid fa-certificate fa-2xl"></i><br><br>GMP CERTIFIED</div>
+        <div class="item"><br><i class="fa-solid fa-cubes-stacked fa-2xl"></i><br><br>NO ADDED SUGAR</div>
+        <div class="item"><br><i class="fa-solid fa-droplet-slash fa-2xl"></i><br><br>NO EXTRACTS USED</div>
+    </div><br>
+    <div class="features">
+        <div class="item"><br><i class="fa-solid fa-flask fa-2xl"></i><br><br>NO ARTIFICIAL FLAVOURS</div>
+        <div class="item"><br><i class="fa-solid fa-wheat-awn-circle-exclamation fa-2xl"></i><br><br>GLUTEN FREE</div>
+        <div class="item"><br><i class="fa-regular fa-thumbs-up fa-2xl"></i><br><br>BEST IN QUALITY</div>
+    </div><br><br>
+  
+    <footer>
+      <div class="footer-col">
+          <h4>Quick links</h4>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="login.html">My profile</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="reviews.html">Reviews and FAQs</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>Shop Online</h4>
+          <ul>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#pp">Popular products</a></li>
+          </ul>
+      </div>
+      
+      <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="links">
+              <i class="fa-solid fa-phone fa-xl"> </i> &nbsp; +91 8069857321  <br><br>
+              <i class="fa-solid fa-envelope fa-xl"></i> &nbsp;rasalipharma@gmail.com
+          </div>
+      </div>
+
+      <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <div class="cart-list" id="cart-list">
+            <!-- Cart items will be listed here -->
+        </div>
+        <div class="cart-total" id="cart-total">
+            <p>Total: ₹0</p>
+        </div>
+        <div class="cart-actions">
+            <button class="btn" id="checkout-btn" onclick="window.location.href='checkout.html'">Checkout</button>
+            <button class="btn" id="clear-cart-btn">Clear Cart</button>
+        </div>
+    </div>
+
+
+    
+   
+      
+  </footer><br>
+  <script src="script.js"></script>
+ </body>
+</html>
+

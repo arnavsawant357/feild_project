@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews and FAQ's</title>
+    <link rel="stylesheet" href="homestyle.css" />
+    <style>
+    body{
+        background-color: beige;
+        padding: 40px;
+        line-height: 1.6rem;
+    }
+    h2{
+        margin-left: 260px;
+    }
+    .accordian{
+    background-color: #fff;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px #666;
+    cursor: pointer;
+    width: 60%;
+    margin-left: 225px;
+    }
+    .question{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    }
+    .icon{
+    margin-right: 16px;
+    }
+    .answer{
+    color: #666;
+    max-height: 0px;
+    overflow: hidden;
+    }
+    .icon.active{
+    transform: rotate(-180deg);
+    }
+    .answer.active{
+    max-height: fit-content;
+    }
+    .accordian h4 {
+    color: rgb(7, 104, 30);
+    font-size: 20px;
+    padding-left: 20px;
+    }
+    p{
+    font-size: 20px;
+    padding-left: 20px;
+    }
+    
+a{
+    text-decoration: none;
+}
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: rgb(3, 87, 34);
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: rgb(3, 87, 34);
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+</style>
+</head>
+<body>
+<a href="home.html" class="home-button">Home</a>
+<section id="testimonials">
+    <div class="testimonial-heading">
+        <span>Comments</span>
+        <h1>Clients Says</h1>
+    </div>
+    <div class="testimonial-box-container">
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="name-user">
+                        <strong>Vidya Sharma</strong>
+                        <span>@vidyaSharma</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p> "I've been using the Herbal Oil for joint pain relief for the past month, and the results are amazing! 
+                    The natural ingredients work wonders, and I can feel a significant reduction in my knee pain. 
+                    The oil absorbs quickly and has a pleasant herbal scent. Highly recommend it to anyone dealing with joint pain."</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="name-user">
+                        <strong>Tanishk Gupta</strong>
+                        <span>@tanugupta</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>"After just a few weeks of using the Ayurvedic Heart Tonic, I can feel a noticeable improvement in my heart health. 
+                    My blood pressure has stabilized, and I feel more energetic and less fatigued. The tonic has a pleasant taste and is 
+                    easy to incorporate into my daily routine. Thank you for such a wonderful product!"</p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="name-user">
+                        <strong>Richa Singh</strong>
+                        <span>@richaS</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>"I've tried various supplements for women's health, but these Women Wellness Capsules are by far the best. 
+                    My energy levels have increased, and I feel more balanced throughout the day. The natural ingredients give me peace of 
+                    mind, knowing I'm not putting harmful chemicals into my body. I highly recommend these capsules to all women looking to
+                     improve their overall health."
+                    </p>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="name-user">
+                        <strong>Mandar Patil</strong>
+                        <span>@patilMandy</span>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="client-comment">
+                <p>"With the flu season around the corner, I decided to try the Immunity Booster Tablets, and they have been fantastic. 
+                    I haven't had any colds or flu since I started taking them. They are easy to swallow and made from natural 
+                    ingredients, which is a big plus for me. I feel more resilient and energetic. A great product to keep your immune 
+                    system strong."</p>
+            </div>
+        </div>
+    </div>
+</section><br><br>
+    <h2>FAQ's</h2>
+    <div class="accordian">
+        <div class="question">
+            <h4> What kind of products do we offer? </h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p>We sell Ayurvedic Tablets, Oil, Powder, Skincare products, beneficial for different organs such as liver, stomach, heart etc.
+                Our products have helped many customers to treat conditions like ulcers, fever, jaundice, muscle strain. We also sell 
+            tablets which helps in blood purification, immunity booster, healthy skin and hair. </p>
+        </div>
+        
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4> What is your return policy?</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p> Please share the reason for cancellation/return and elaborate your complete concern along with your contact details to our email " ".Our team 
+                will get back to you soon. </p>
+        </div>
+        
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4> What is the estimated delivery date?</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p> All orders are processed within a day. You can expect delivery of the order within 3-7 business days. 
+                For locations which are in the interiors or in difficult coverage area, this may take between 10-12 working days.</p>
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4> What types of payment methods do you offer?</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p> You can pay for your purchases using Cash on Delivery, Debit, Credit card, Paytm or Netbanking.</p>
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4> Are your products organic or sustainably sourced?</h4>
+            <i class="icon fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+            <p> All our products are organic, emphasizing on producing food that is free from synthetic chemicals which consumers believe
+                to be healthier.
+            </p>
+        </div>
+    </div>
+    <script>
+        const accordians = document.querySelectorAll('.accordian');
+
+    accordians.forEach(accordian => {
+    const icon = accordian.querySelector('.icon');
+    const answer = accordian.querySelector('.answer');
+
+    accordian.addEventListener('click', () => {
+        icon.classList.toggle('active');
+        answer.classList.toggle('active');
+    })
+})
+    </script>
+</body>
+</html>

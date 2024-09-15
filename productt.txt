@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "aliant",
+        "price": 520,
+        "image": "aliant.jpg"
+    },
+    {
+        "id": 2,
+        "name": "amla",
+        "price": 220,
+        "image": "amla.jpg"
+    },
+    {
+        "id": 3,
+        "name": "apoliv",
+        "price": 250,
+        "image": "apoliv.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "digestive",
+        "price": 420,
+        "image": "digestive.jpg"
+    },
+    {
+        "id": 5,
+        "name": "joint",
+        "price": 120,
+        "image": "joint.jpg"
+    },
+    {
+        "id": 6,
+        "name": "neem",
+        "price": 120,
+        "image": "neem.jpg"
+    }
+]

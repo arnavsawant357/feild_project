@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+<title> Skincare </title>
+   <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+    line-height: 1.5;
+    background-color: beige;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1180px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+.card{
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 128, 0, 0.2);
+    padding: 10px 20px;
+    margin: 10px;
+}
+.card img{
+    max-width: 200px;
+}
+.card h4, .card h5{
+    text-align: center;
+}
+.card h4{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.card h5{
+    font-size: 1rem;
+    margin: 5px 0;
+}
+.card p{
+    margin-bottom: 10px;
+}
+.card .btn{
+    margin-top: auto;
+    background: green;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(3, 87, 34);
+    width: 100%;
+}
+.menubar{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+   </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="brand-title"> Rasali </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"> </span>
+            <span class="bar"> </span>
+            <span class="bar"> </span>
+            <span class="bar"> </span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li class="active"> <a href="home.html"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="login.html"> Profile </a></li>
+                <li> <a href="#"> Cart </a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="menubar">
+        <ul>
+            <li id="categories">  Shop by Categories  
+                <div class="sub-menu-1">
+                    <ul>
+                        <li> <a href="general.html" style="color:black;">General Wellness </a></li>
+                        <li> <a href="women.html" style="color:black;">Women Wellness </a> </li>
+                        <li> <a href="digestive.html" style="color:black;">Digestive Wellness </a></li>
+                        <li> <a href="cardiac.html" style="color:black;">Cardiac Wellness </a> </li>
+                        <li> <a href="joint.html" style="color:black;">Joint's Wellness </a></li>
+                        <li> <a href="skincare.html" style="color:black;">Skincare</a></li>
+                    </ul>
+                </div>
+            </li>
+             <li id="products"> Shop by Products 
+                <div class="sub-menu-2" id="products">
+                    <ul>
+                        <li> <a href="oil.html" style="color:black;">Oil </a></li>
+                        <li> <a href="churna.html" style="color:black;">Herbal Powder/Churna </a></li>
+                        <li> <a href="juice.html" style="color:black;">Juices </a></li>
+                        <li> <a href="tablets.html" style="color:black;">Tablets </a></li>
+                    </ul>
+                </div>
+            </li>
+            <li> <a href="reviews.html"> Reviews and FAQs </a></li>
+        </ul>
+        <div class="search">
+            <input type="text" id="search" placeholder="Search" spellcheck="false">
+            <button onclick="searchProducts()"> <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #FFFF;"></i></button>
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="row">
+          <div class="card">
+            <img src="kama.jpg" alt="">
+            <h4> Hydrating Light Cream </h4>
+            <h5><center>Ayurveda Eladi Hydrating Light Cream Enriched With Vitamin E</center></h5>
+            <p>Rs.300</p>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          <div class="card">
+            <img src="facewashh.jpg" alt="">
+            <h4><center>Neem Facewash</h4></center>
+            <h5><center>Neem Face Wash 100gm | Deep Cleanses Pores, Tightens The Skin, Controls Acne And Breakouts | Ideal For All Skin Types</center></h5>
+            <p>Rs.440</p>
+            
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          <div class="card">
+            <img src="oil.jpg" alt="">
+            <h4>Ayurvedic Body Oil</h4>
+            <h5><center>Nisarga Herbs, Shatavari Body Oil, Nourishment for Firm, Supple and Glowing Skin, 100 ml </center></h5>
+            <p>Rs.200</p>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          </div>
+          <div class="container">
+            <div class="row">
+            
+          <div class="card">
+            <img src="derm.jpg" alt="">
+            <h4><center>Acne care capsule</h4></center>
+            <h5><center>Skin Disorder Ayurvedic Medicines, Derma Pure, Packaging Size: 60 Capsule, Packaging Type: Bottle</center></h5>
+            <p>Rs.300</p>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          <div class="card">
+            <img src="aliant.jpg" alt="">
+            <h4>Aliant Capsule</h4>
+            <h5><center>Ayurvedic Skin Allergy Medicine I Natural Blood Purifier</center></h5>
+            <p>Rs.340</p>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          <div class="card">
+            <img src="ved.jpg" alt="">
+            <h4>Ayurvedic Medicine</h4>
+            <h5><center> Helps against all sorts of skin problems like itchiness, pruritis, fungal infections, hives and blisters. 
+                It also keeps your skin glowing and complexion clear. </center></h5>
+            <p>Rs.340</p>
+            <a href="#" class="btn">Add to Cart</a>
+          </div>
+          
+            
+        </div>
+        
+      </div>
+      <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <div class="cart-list" id="cart-list">
+            <!-- Cart items will be listed here -->
+        </div>
+        <div class="cart-total" id="cart-total">
+            <p>Total: ₹0</p>
+        </div>
+        <div class="cart-actions">
+            <button class="btn" id="checkout-btn">Checkout</button>
+            <button class="btn" id="clear-cart-btn">Clear Cart</button>
+        </div>
+    </div>  
+    
+    <script src="script.js"></script>
+  </body>
+</html>
